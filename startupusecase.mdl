@@ -1,0 +1,390 @@
+
+(object Petal
+    version    	42
+    _written   	"Rose 4.5.8054a"
+    charSet    	0)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5CDF4B930003"
+    defaults   	(object defaults
+	rightMargin 	0.250000
+	leftMargin 	0.250000
+	topMargin  	0.250000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	TRUE
+	gridX      	16
+	gridY      	16
+	defaultFont 	(object Font
+	    size       	10
+	    face       	"Arial"
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	1
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"5CDF4B930005"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list)
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"5CDF4B93005C"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"5CDF4B930004"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"5CDF4B930006"
+	logical_models 	(list unit_reference_list
+	    (object Class "startup"
+		quid       	"5CDF4BBD014B"
+		stereotype 	"Actor")
+	    (object UseCase "register"
+		quid       	"5CDF4BC30012")
+	    (object UseCase "login"
+		quid       	"5CDF4BC70244")
+	    (object UseCase "uploadproducts"
+		quid       	"5CDF4BE10019")
+	    (object UseCase "viewproducts"
+		quid       	"5CDF4BE80149")
+	    (object UseCase "logout"
+		quid       	"5CDF4BF002F7")
+	    (object Association "$UNNAMED$0"
+		quid       	"5CDF4BF6025B"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$1"
+			quid       	"5CDF4BF700D4"
+			supplier   	"Logical View::register"
+			quidu      	"5CDF4BC30012"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$2"
+			quid       	"5CDF4BF700D5"
+			supplier   	"Logical View::startup"
+			quidu      	"5CDF4BBD014B"
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$3"
+		quid       	"5CDF4BF90175"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$4"
+			quid       	"5CDF4BFA0003"
+			supplier   	"Logical View::login"
+			quidu      	"5CDF4BC70244"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$5"
+			quid       	"5CDF4BFA0004"
+			supplier   	"Logical View::startup"
+			quidu      	"5CDF4BBD014B"
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$6"
+		quid       	"5CDF4BFC019A"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$7"
+			quid       	"5CDF4BFF0053"
+			supplier   	"Logical View::uploadproducts"
+			quidu      	"5CDF4BE10019"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$8"
+			quid       	"5CDF4BFF0054"
+			supplier   	"Logical View::startup"
+			quidu      	"5CDF4BBD014B"
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$9"
+		quid       	"5CDF4C030260"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$10"
+			quid       	"5CDF4C040173"
+			supplier   	"Logical View::viewproducts"
+			quidu      	"5CDF4BE80149"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$11"
+			quid       	"5CDF4C040174"
+			supplier   	"Logical View::startup"
+			quidu      	"5CDF4BBD014B"
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$12"
+		quid       	"5CDF4C0600E1"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$13"
+			quid       	"5CDF4C070012"
+			supplier   	"Logical View::logout"
+			quidu      	"5CDF4BF002F7"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$14"
+			quid       	"5CDF4C070013"
+			supplier   	"Logical View::startup"
+			quidu      	"5CDF4BBD014B"
+			is_navigable 	TRUE))))
+	logical_presentations 	(list unit_reference_list
+	    (object ClassDiagram "Main"
+		quid       	"5CDF4B93001F"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object UseCaseView "Logical View::register" @1
+			location   	(848, 256)
+			label      	(object ItemLabel
+			    Parent_View 	@1
+			    location   	(848, 394)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"register")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5CDF4BC30012"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Logical View::login" @2
+			location   	(848, 512)
+			label      	(object ItemLabel
+			    Parent_View 	@2
+			    location   	(848, 650)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"login")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5CDF4BC70244"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Logical View::uploadproducts" @3
+			location   	(848, 752)
+			label      	(object ItemLabel
+			    Parent_View 	@3
+			    location   	(848, 890)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"uploadproducts")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5CDF4BE10019"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Logical View::viewproducts" @4
+			location   	(848, 976)
+			label      	(object ItemLabel
+			    Parent_View 	@4
+			    location   	(848, 1114)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"viewproducts")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5CDF4BE80149"
+			height     	118
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::startup" @5
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(256, 800)
+			label      	(object ItemLabel
+			    Parent_View 	@5
+			    location   	(256, 960)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	327
+			    justify    	0
+			    label      	"startup")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5CDF4BBD014B"
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$0" @6
+			location   	(544, 529)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5CDF4BF6025B"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$1" @7
+				Parent_View 	@6
+				location   	(288, -271)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5CDF4BF700D4"
+				client     	@6
+				supplier   	@1
+				line_style 	0)
+			    (object RoleView "$UNNAMED$2" @8
+				Parent_View 	@6
+				location   	(288, -271)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5CDF4BF700D5"
+				client     	@6
+				supplier   	@5
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$3" @9
+			location   	(525, 666)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5CDF4BF90175"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$4" @10
+				Parent_View 	@9
+				location   	(269, -134)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5CDF4BFA0003"
+				client     	@9
+				supplier   	@2
+				line_style 	0)
+			    (object RoleView "$UNNAMED$5" @11
+				Parent_View 	@9
+				location   	(269, -134)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5CDF4BFA0004"
+				client     	@9
+				supplier   	@5
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$6" @12
+			location   	(525, 775)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5CDF4BFC019A"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$7" @13
+				Parent_View 	@12
+				location   	(269, -25)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5CDF4BFF0053"
+				client     	@12
+				supplier   	@3
+				line_style 	0)
+			    (object RoleView "$UNNAMED$8" @14
+				Parent_View 	@12
+				location   	(269, -25)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5CDF4BFF0054"
+				client     	@12
+				supplier   	@5
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$9" @15
+			location   	(525, 877)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5CDF4C030260"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$10" @16
+				Parent_View 	@15
+				location   	(269, 77)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5CDF4C040173"
+				client     	@15
+				supplier   	@4
+				line_style 	0)
+			    (object RoleView "$UNNAMED$11" @17
+				Parent_View 	@15
+				location   	(269, 77)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5CDF4C040174"
+				client     	@15
+				supplier   	@5
+				line_style 	0)))
+		    (object UseCaseView "Logical View::logout" @18
+			location   	(864, 1216)
+			label      	(object ItemLabel
+			    Parent_View 	@18
+			    location   	(864, 1354)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"logout")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5CDF4BF002F7"
+			height     	118
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$12" @19
+			location   	(546, 997)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5CDF4C0600E1"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$13" @20
+				Parent_View 	@19
+				location   	(290, 197)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5CDF4C070012"
+				client     	@19
+				supplier   	@18
+				line_style 	0)
+			    (object RoleView "$UNNAMED$14" @21
+				Parent_View 	@19
+				location   	(290, 197)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5CDF4C070013"
+				client     	@19
+				supplier   	@5
+				line_style 	0)))))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"5CDF4B930006"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"5CDF4B93005B"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    process_structure 	(object Processes
+	quid       	"5CDF4B930007"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"5CDF4B930009"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	quid       	"5CDF4B930008"))
